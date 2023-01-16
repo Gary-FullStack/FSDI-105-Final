@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/144d70894d.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css" />
+	<title>Registration Project2</title>
+</head>
+
+<body>
+	<header class="header">
+		<h1 class="logo"><a href="index.html">Registration Project</a></h1>
+		<ul class="main-nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="registration.html">Register</a></li>
+		</ul>
+	</header>
+
+	<main>
+		<h1 class="formTitle">New User registration.</h1>
+
+		<div class="form-container">
+
+
+			<div class="input-container">
+				<i class="fa fa-user icon"></i>
+				<input class="input-field" id="txtFname" type="text" placeholder="Enter your first name.">
+			</div>
+
+			<div class="input-container">
+				<i class="fa-solid fa-user-plus icon"></i>
+				<input class="input-field" id="txtLname" type="text" placeholder="Enter your Last name.">
+			</div>
+
+			<div class="input-container">
+				<i class="fa fa-envelope icon"></i>
+				<input class="input-field" id="txtEmail" type="text" placeholder="Enter your Email.">
+			</div>
+
+			<div class="input-container">
+				<i class="fa fa-key icon"></i>
+				<input class="input-field" id="txtPassword" type="password" placeholder="Enter your Password.">
+			</div>
+
+			<div class="input-container">
+				<i class="fa-solid fa-person-half-dress icon"></i>
+				<input class="input-field" id="txtGender" type="text" placeholder="Enter your Gender.">
+			</div>
+
+			<div class="input-container">
+				<i class="fa-solid fa-hands-holding-child icon"></i>
+				<input class="input-field" id="txtAge" type="number" placeholder="Enter your Age.">
+			</div>
+
+			<div class="input-container">
+				<i class="fa-solid fa-map-location-dot icon"></i>
+				<input class="input-field" id="txtAddress" type="text" placeholder="Enter your Address.">
+			</div>
+
+			<div class="input-container">
+				<i class="fa-solid fa-square-phone icon"></i>
+				<input class="input-field" id="txtPhone" type="text" placeholder="Enter your Phone #.">
+			</div>
+
+
+			<div class="input-container">
+				<i class="fa-solid fa-file-invoice-dollar icon"></i>
+				<select class="input-field" id="txtPay">
+					<option value="">--Please choose--</option>
+					<option value="Bitcoin">Bitcoin</option>
+					<option value="Credit">Credit</option>
+					<option value="Paypal">PayPal</option>
+					<option value="Venmo">Venmo</option>
+				</select>
+			</div>
+
+			<div class="input-container">
+				<i class="fa-solid fa-palette icon"></i>
+				<input class="input-field" id="txtColor" type="text" placeholder="Write your Favotite color?">
+			</div>
+
+
+			<button class="btn" id="regbtn">Register</button>
+
+		</div>
+	</main>
+
+
+
+	<h2>User List</h2>
+	<table>
+		<thead>
+			<th>First name</th>
+			<th>Last name</th>
+			<th>Email</th>
+			<th>Gender</th>
+			<th>Age</th>
+			<th>Address</th>
+			<th>Phone</th>
+			<th>Payment</th>
+			<th>Color</th>
+
+		</thead>
+
+		<tbody class="usersTable" id="usersTable">
+
+		</tbody>
+	</table>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+	<script src="/js/register.js"></script>
+	<!-- <script src="js/users.js"></script> -->
+	<script src="/js/storeManager.js"></script>
+
+
+
+
+
+</body>
+
+</html>
